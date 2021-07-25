@@ -40,7 +40,7 @@ Then, the algorithm digs through the maze with a Q-learning agent starting from 
 
 The Q-learning agent is an instance of the QLearningAgent class from the QDungeonCore.qagent module. It uses an instance of the DungeonMap class at initialization phase. The Q-learning agent can additionally be instantiated with the Q-learning paramters: discount factor gamma, learning rate alpha and a decent, stochastic initalization of the Q_0 matrix. In the main routine of test.py these variables are not explicitly modified, but the default values are set. Of course this can be altered by the user.
 
-The algorithm stops as soon as the treasure and end point have been "discovered" by the agent. As a result the Q-matrix within the Q-learning agent is trained and the maze has been formed according to the constraints and maze requirements.
+The algorithm stops as soon as the treasure and end point have been "discovered" by the agent. As a result the Q-matrix within the Q-learning agent was trained and the maze has been formed during training according to the constraints and maze requirements.
 
 ### Q-learning algorithm functionality
 For this use case and specific task, the formula for calculating the temporal difference and thus the Q-matrix in each step has been interpreted to fulfill the requirements of the two paths from start to treasure and end. Several assumptions have been made to enhance the algorithm:
