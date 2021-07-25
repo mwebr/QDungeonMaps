@@ -49,7 +49,8 @@ The algorithm stops as soon as the treasure and end point have been "discovered"
 ### Q-learning algorithm functionality
 The general equation of the Q-learning algorithm is given by
 <br />
-<img src="data/q-learning-eq.png" alt="Q-learning equation" width="350"/>
+<img src="data/q-learning-eq.png" alt="Q-learning equation" width="50%"/>
+<br />
 Source: [Q-learning Wikipedia](https://en.wikipedia.org/wiki/Q-learning)
 
 For this use case and specific task, the term for calculating the temporal difference and thus the Q-matrix in each step has been interpreted to discover the two paths from start to treasure and end. Several assumptions and interpretations have been made to enhance the algorithm:
