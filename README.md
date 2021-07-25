@@ -28,10 +28,12 @@ Lastly, the AI will be trained 5 times with random check points (start, treasure
 ## Basic idea and architecture
 ### Visualization and representation of maze
 To visualize the maze, matplotlib has been used. It generates a 4x4 field matrix with all the walls and corners. Therefore the visualization of a 4x4 field with walls becomes a 9x9 matrix, that is displayed with imshow. Walls/corners are indicated in black, empty cells are indicated in white. At the initial state of the map creation all walls are there and the fields are empty. The check points are displayed in different colors (blue corresponds to the start point, green corresponds to the treasure and red to the end point). It looks like this:
-<img src="data/init_maze.png" alt="Initial maze without holes" width="120"/>
+<br />
+<img src="data/init_maze.png" alt="Initial maze without holes" width="240"/>
 
 After a successful run of the Q-learning algorithm the map is for example plotted as follows:
-<img src="data/created_maze.png" alt="Finished maze" width="120"/>
+<br />
+<img src="data/created_maze.png" alt="Finished maze" width="240"/>
 
 ### Software concept
 The algorithm starts with a per default 4x4 maze where all walls are present (each cell contains 4 walls). The checkpoints "start point", "treasure point" and "end point" are placed on the map either per user definition or by random choice.
