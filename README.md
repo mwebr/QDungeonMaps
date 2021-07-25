@@ -1,7 +1,7 @@
 # QDungeonMaps
 **QDungeonMaps** is a small project to generate a random maze based on a Q-learning AI algorithm. The maze will be generated, so that there is a path from the starting point to the treasure, as well as to the end point.
 
-## Deployment and test examples
+## Deployment and test
 Install all dependencies using the `requirements.txt`. As the project is currently very simple, only `numpy` for calculation and `matplotlib` for visualization are needed.
 
 Change into the root project folder and for Anaconda use:
