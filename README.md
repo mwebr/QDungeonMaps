@@ -36,7 +36,7 @@ After a successful run of the Q-learning algorithm the map is for example plotte
 <img src="data/created_maze.png" alt="Finished maze" width="240"/>
 
 ### Software concept
-The algorithm starts with a per default 4x4 maze where all walls are present (each cell contains 4 walls). The checkpoints "start point", "treasure point" and "end point" are placed on the map either per user definition or by random choice.
+The algorithm starts with a per default 4x4 maze where all walls are present (each cell contains 4 walls). Each cell has a unique number from 0 to 15, starting from the left upper corner and counting up row by row until the right lower corner. The check points "start point", "treasure point" and "end point" are placed on the map either per user definition or by random choice.
 
 Then, the algorithm digs through the maze with a Q-learning agent starting from the start point. When it moves from one cell to another, the wall is removed and the maze is therefore formed gradually. The algorithm can only move from one cell to a neighboring cell. Everthing concerning the maze environment e.g. playable moves, tracking of the current position, checkpoints etc. is handled within `QDungeonCore.map_handler`. More specifically, each map is an instance of the `DungeonMap` class.
 
